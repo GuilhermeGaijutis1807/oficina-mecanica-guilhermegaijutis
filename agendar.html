@@ -25,12 +25,12 @@
         <form action="#" method="post">
             <p>
                 <label for="nome">Nome Completo:</label><br>
-                <input type="text" id="nome" name="nome">
+                <input type="text" id="nome" name="nome" required>
             </p>
 
             <p>
                 <label for="servico">Serviço Desejado:</label><br>
-                <select id="servico" name="servico">
+                <select id="servico" name="servico" required>
                     <option value="">Selecione um serviço...</option>
                     <option value="oleo">Troca de Óleo</option>
                     <option value="freio">Revisão de Freios</option>
@@ -41,12 +41,12 @@
 
             <p>
                 <label for="data">Data de Preferência:</label><br>
-                <input type="date" id="data" name="data">
+                <input type="date" id="data" name="data" required>
             </p>
 
             <p>
                 <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="telefone" name="telefone">
+                <input type="tel" id="telefone" name="telefone" required inputmode="numeric" maxlength="15" pattern="(?:\(?[1-9]{2}\)?\s?)?(?:9\d{4}|\d{4})-?\d{4}" title="Formato de telefone inválido. Exemplo: 17 98765-4321 ou 17987654321">
             </p>
 
             <p>
