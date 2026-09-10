@@ -22,7 +22,42 @@
 
     <main>
         <h2>Agende sua Manutenção</h2>
-        <form action="#" method="post"></form>
+        <form action="#" method="post">
+            <p>
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome">
+            </p>
+
+            <p>
+                <label for="servico">Serviço Desejado:</label><br>
+                <select id="servico" name="servico">
+                    <option value="">Selecione um serviço...</option>
+                    <option value="oleo">Troca de Óleo</option>
+                    <option value="freio">Revisão de Freios</option>
+                    <option value="alinhamento">Alinhamento / Balanceamento</option>
+                    <option value="injecao">Injeção Eletrônica</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="data">Data de Preferência:</label><br>
+                <input type="date" id="data" name="data">
+            </p>
+
+            <p>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone">
+            </p>
+
+            <p>
+                <label for="email">E-mail de Contato:</label><br>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <p>
+                <button type="submit">Solicitar Agendamento</button>
+            </p>
+        </form>
     </main>
 
     <footer>
